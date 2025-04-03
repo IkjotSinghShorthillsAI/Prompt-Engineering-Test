@@ -232,14 +232,12 @@ def main():
         output_lines.append("----- Top 5 Gainers -----")
         for idx, row in gainers.iterrows():
             line = f"Symbol: {row['symbol']}, % Change: {row['pChange']:.2f}%"
-            # print(line)
             output_lines.append(line)
         output_lines.append("-------------------------\n")
         
         output_lines.append("----- Top 5 Losers -----")
         for idx, row in losers.iterrows():
             line = f"Symbol: {row['symbol']}, % Change: {row['pChange']:.2f}%"
-            # print(line)
             output_lines.append(line)
         output_lines.append("-------------------------\n")
         
@@ -251,14 +249,12 @@ def main():
         output_lines.append("----- Stocks 30% Below 52-Week High -----")
         for sym, current, high in below_high:
             line = f"Symbol: {sym}, Current Price: {current:.2f}, 52-Week High: {high:.2f}"
-            # print(line)
             output_lines.append(line)
         output_lines.append("-----------------------------------------\n")
         
         output_lines.append("----- Stocks 20% Above 52-Week Low -----")
         for sym, current, low in above_low:
             line = f"Symbol: {sym}, Current Price: {current:.2f}, 52-Week Low: {low:.2f}"
-            # print(line)
             output_lines.append(line)
         output_lines.append("----------------------------------------\n")
         
@@ -267,7 +263,6 @@ def main():
         output_lines.append("----- Top 5 Stocks by 30-Day Return -----")
         for sym, ret in returns_30d[:5]:
             line = f"Symbol: {sym}, 30-Day Return: {ret:.2f}%"
-            # print(line)
             output_lines.append(line)
         output_lines.append("-----------------------------------------\n")
         
@@ -285,7 +280,7 @@ def main():
         with open(results_path, "r") as f:
             file_content = f.read()
             print(file_content)
-        print("--------------------------------------")
+        
         
     except Exception as e:
         logging.error("An error occurred in main execution: %s", e)
