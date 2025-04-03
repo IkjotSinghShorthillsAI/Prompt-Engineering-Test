@@ -40,8 +40,8 @@ This project fetches live NIFTY 50 stock data from NSE India, analyzes historica
 
 
 ## Relevant Links
-- **GitHub Repository**: [Insert GitHub link here]
-- **ChatGPT Prompts Used**: [Insert ChatGPT chat link here]
+- **GitHub Repository**: [Github](https://github.com/IkjotSinghShorthillsAI/Prompt-Engineering-Test)
+- **ChatGPT Prompts Used**: [Chat](https://chatgpt.com/share/67ee6575-130c-8000-873b-eed610ce40b8)
 
 
 - **Generated Reports and Plots**:
